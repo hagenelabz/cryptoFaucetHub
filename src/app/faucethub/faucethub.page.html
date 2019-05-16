@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Faucet Hub
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- fab placed to the top end -->
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-dropup"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="openFaucetHubZEC()">
+        <ion-text>ZEC</ion-text>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetHubDGB()">
+        <ion-text>DGB</ion-text>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetHubBTX()">
+        <ion-text>BTX</ion-text>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetHubBLK()">
+        <ion-text>BLK</ion-text>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetHubDASH()">
+        <ion-text>DASH</ion-text>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetHubPPC()">
+        <ion-text>PPC</ion-text>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetHubXPM()">
+        <ion-text>XPM</ion-text>
+      </ion-fab-button>
+    </ion-fab-list>
+    <!-- <ion-fab-list side="top">
+      <ion-fab-button click()="openFaucetHub()">
+        <ion-img src="/assets/bitcoinCashEs.png"></ion-img>
+      </ion-fab-button>
+    </ion-fab-list> -->
+  </ion-fab>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-dropdown"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="bottom">
+      <ion-fab-button (click)="openFaucetHubBTC()">
+        <!-- <ion-img src="/assets/esCoin.png"></ion-img> -->
+        <ion-text>BTC</ion-text>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetHubETH()">
+        <ion-text>ETH</ion-text>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetHubXMR()">
+        <ion-text>XMR</ion-text>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetHubLTC()">
+        <ion-text>LTC</ion-text>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetHubDODGE()">
+        <ion-text>Doge</ion-text>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetHubBCH()">
+        <ion-text>BCH</ion-text>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetHubPOT()">
+        <ion-text>POT</ion-text>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <ion-card class="btcnewz-card">
+    <ion-img src="/assets/faucethub.png"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>FaucetHub Micropayment Platform</ion-card-subtitle>
+      <ion-card-title>Faucet Hub</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Receive instant bitcoin and other cryptocurrencies in your faucethub account and withdraw to your personal wallet with
+      VERY low fee!<br>Each button will take you to that specific faucet list.</p>
+      <ion-chip outline="true" (click)="openFaucetHub()" class="ion-float-right">
+        <ion-label>Dashboard</ion-label>
+      </ion-chip>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

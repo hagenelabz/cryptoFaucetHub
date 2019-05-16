@@ -1,0 +1,7 @@
+{
+  "appId": "hagenelabz.com",
+  "appName": "browserapp",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

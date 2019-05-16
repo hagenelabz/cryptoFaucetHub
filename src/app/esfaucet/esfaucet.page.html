@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      ES Faucet / BTCNewz
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <!-- fab placed to the top end -->
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-dropup"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="openFaucetBitcoinCash()">
+        <ion-img src="/assets/bitcoinCashEs.png"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetEthereumClassic()">
+        <ion-img src="/assets/ethereumClassic.png"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucet0x()">
+        <ion-img src="/assets/0x.png"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetBasicAttentionToken()">
+        <ion-img src="/assets/basicAttentionToken.png"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetStellar()">
+        <ion-img src="/assets/stellar.png"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetDigibyte()">
+        <ion-img src="/assets/digibyte.png"></ion-img>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-dropdown"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="bottom">
+      <ion-fab-button (click)="openFaucetEsCoin()">
+        <ion-img src="/assets/esCoin.png"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetBitcoin()">
+        <ion-img src="/assets/bitcoin.png"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetEthereum()">
+        <ion-img src="/assets/Ethereum.png"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetLitecoin()">
+        <ion-img src="/assets/litecoinES.png"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetRipple()">
+        <ion-img src="/assets/ripple.png"></ion-img>
+      </ion-fab-button>
+      <ion-fab-button (click)="openFaucetDogecoin()">
+        <ion-img src="/assets/dogecoinEs.png"></ion-img>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <ion-card class="btcnewz-card">
+    <ion-img src="/assets/esfaucet.gif"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Your source to cryptocurrency!</ion-card-subtitle>
+      <ion-card-title>ES Faucet / BTCNewz</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>ESFaucet is a Multi-Crypto faucet in which you decide how often to claim them.
+      </p>
+      <ion-chip outline="true" (click)="openBtcNewz()" class="ion-float-right">
+        <ion-label>Dashboard</ion-label>
+      </ion-chip>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Coinpot + Faucets
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="coinpot-card">
+    <!-- fab placed to the top end -->
+    <ion-fab vertical="top" horizontal="end" slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="arrow-dropdown"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="bottom">
+        <ion-fab-button (click)="openMoonBitcoin()">
+          <ion-img src="/assets/bitcoin.png"></ion-img>
+        </ion-fab-button>
+        <ion-fab-button (click)="openMoonBitcoinCash()">
+          <ion-img src="/assets/bitcoinCash.png"></ion-img>
+        </ion-fab-button>
+        <ion-fab-button (click)="openMoonLitecoin()">
+          <ion-img src="/assets/litecoin.png"></ion-img>
+        </ion-fab-button>
+        <ion-fab-button (click)="openMoonDash()">
+          <ion-img src="/assets/dashcoin.png"></ion-img>
+        </ion-fab-button>
+        <ion-fab-button (click)="openMoonDoge()">
+          <ion-img src="/assets/dogecoin.png"></ion-img>
+        </ion-fab-button>
+        <ion-fab-button (click)="openBonusBitcoin()">
+          <ion-img src="/assets/bonusbitcoin.jpeg"></ion-img>
+        </ion-fab-button>
+        <ion-fab-button (click)="openBitFun()">
+          <ion-img src="/assets/bitfun.png"></ion-img>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+    <ion-img src="/assets/coinpot.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Cryptocurrency microwallet</ion-card-subtitle>
+      <ion-card-title>Coin Pot</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Accumulate Bitcoin, Litecoin, Dogecoin, BitcoinCash and Dash.<br>
+        You can also mine all these coins by passively using your computer’s CPU at the speed you prefer.<br>
+      </p>
+      <ion-chip outline="true" (click)="openCoinpot()" class="ion-float-right">
+      <ion-label>Dashboard</ion-label>
+      </ion-chip>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
