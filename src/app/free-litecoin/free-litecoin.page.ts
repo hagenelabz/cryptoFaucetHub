@@ -25,7 +25,7 @@ export class FreeLitecoinPage implements OnInit {
   }
 
   async openLitecoin() {
-    await Browser.open({ toolbarColor: '#2d5392', url: 'https://free-litecoin.com/login?referer=316665' });
+    await Browser.open({ toolbarColor: '#2d5392', url: 'https://free-litecoin.com/login?referer=316665', windowName: '_self' });
   }
 
   ngOnInit() {

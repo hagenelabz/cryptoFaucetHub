@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Crypto Faucet Hub</string>
     <string name="title_activity_main">Crypto Faucet Hub</string>
-    <string name="package_name">hagenelabz.com</string>
-    <string name="fileprovider_authority">hagenelabz.com.fileprovider</string>
-    <string name="custom_url_scheme">hagenelabz.com</string>
+    <string name="package_name">com.hagenelabz.cryptofaucethub</string>
+    <string name="fileprovider_authority">com.hagenelabz.cryptofaucethub.fileprovider</string>
+    <string name="custom_url_scheme">com.hagenelabz.cryptofaucethub</string>
 </resources>

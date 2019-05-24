@@ -24,7 +24,7 @@ export class FreedogecoinPage implements OnInit {
     });
   }
   async openFreeDogeCoin() {
-    await Browser.open({ toolbarColor: '#b2942d', url: 'http://freedoge.co.in/?r=4096609' });
+    await Browser.open({ toolbarColor: '#b2942d', url: 'http://freedoge.co.in/?r=4096609', windowName: '_self' });
   }
 
   ngOnInit() {

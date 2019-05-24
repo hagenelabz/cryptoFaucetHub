@@ -26,7 +26,7 @@ export class FreeDogecoinPage implements OnInit {
   }
 
   async openFreeDogeCoin() {
-    await Browser.open({ toolbarColor: '#b2942d', url: 'https://free-dogecoin.com/?referer=28866' });
+    await Browser.open({ toolbarColor: '#b2942d', url: 'https://free-dogecoin.com/?referer=28866', windowName: '_self' });
   }
 
   ngOnInit() {

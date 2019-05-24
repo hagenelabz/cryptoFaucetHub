@@ -25,7 +25,7 @@ export class FreebitcoinPage implements OnInit {
   }
 
   async openBitcoin() {
-    await Browser.open({ toolbarColor: '#f79129', url: 'https://freebitco.in/?r=19431894' });
+    await Browser.open({ toolbarColor: '#f79129', url: 'https://freebitco.in/?r=19431894', windowName: '_self' });
   }
 
   ngOnInit() {

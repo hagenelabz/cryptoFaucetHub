@@ -1,6 +1,6 @@
 {
-  "appId": "hagenelabz.com",
-  "appName": "browserapp",
+  "appId": "com.hagenelabz.cryptofaucethub",
+  "appName": "Crypto Faucet Hub",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www"
