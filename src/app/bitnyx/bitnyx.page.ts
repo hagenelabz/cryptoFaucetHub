@@ -29,7 +29,7 @@ export class BitnyxPage implements OnInit {
     await Browser.open({ toolbarColor: '#41b883', url: 'https://bitnyx.com/?r=162842', windowName: '_self' });
   }
   async openBitnyxDashboard() {
-    await Browser.open({ toolbarColor: '#41b883', url: 'https://bitnyx.com/?r=162842', windowName: '_self' });
+    await Browser.open({ toolbarColor: '#41b883', url: 'https://bitnyx.com/?r=162842',  });
   }
   ngOnInit() {
   }
